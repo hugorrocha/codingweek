@@ -1,25 +1,315 @@
-h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:black;
-    font-size: 50px;
-    align-content: center;
+ html,body{
+     margin:0;
+     padding:0;
+     scroll-behavior: smooth;
+ }
+ 
+ hr { 
+    border: 1px solid #65d0f2
+    }
+
+* {
+    color: #414042;
 }
 
-h3{
-    color: #65d0f2;
-}
+/* ------------------------------------- */
+/* ---------------Nav Bar--------------- */
+/* ------------------------------------- */
+ .flex-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.20);
+ }
+
+ nav {
+    margin:0;
+ }
+ 
+ nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav img {
+      margin: 10px;
+  }
+
+ 
+  nav li {
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    color: #414042;
+  }
+  
+  nav a {
+    padding: 8px;
+    text-decoration: none;
+    color: #414042;
+  }
+
+  nav a:hover {
+      color: #65d0f2;
+  }
+
+/* ------------------------------------- */
+/* -------------Main Banner------------- */
+/* ------------------------------------- */
 
 .main-banner {
-    background-color: yellow;
-    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff200;
+    height: 80vh;
 }
+
+.main-banner h1 {
+    font-family: abril-titling, serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#414042;
+    font-size: 50px;
+    align-content: center;
+    padding: 0 5em;
+}
+
+/* ------------------------------------- */
+/* ---------------Projects-------------- */
+/* ------------------------------------- */
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    align-content: flex-start;
+    }
+
+.project-title h1 {
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #65d0f2;
+    margin: 100px 0 0 100px;
+}
+
+.project-title h2 {
+    font-family: abril-titling, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    color: #414042;
+    margin: 0 0 20px 100px;
+}
+
+.flex-projects img {
+    display: flex;
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-projects {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0 100px;
+}
+
+/* ------------------------------------- */
+/* ---------------Services-------------- */
+/* ------------------------------------- */
+
+.section-title h2 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #65d0f2;
+    margin: 100px 0 0 100px;
+}
+
+.section-title h1 {
+    font-family: abril-titling, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    color: #414042;
+    margin: 0 0 20px 100px;
+}
+
+.section-title h3 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #f43d4d;
+    margin: 100px 0 0 100px;
+}
+
+.services-description {
+    margin: 0 200px;
+    /* border: 3px solid blue; */
+}
+
+.services p {
+    font-family: abril-text, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0 0 100px 100px;
+    padding: 0;
+}
+
+.services-description h3 {
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #65d0f2;
+    /* border: 3px solid purple; */
+}
+
+.services-description h4 {
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #65d0f2;
+    /* border: 3px solid purple; */
+}
+
+.services-description h5 {
+    font-family: abril-text, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    /* border: 3px solid greenyellow; */
+}
+
+.services-description p {
+    font-family: chevin-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    /* border: 3px solid red; */
+}
+
+/* ------------------------------------- */
+/* --------------Manifesto-------------- */
+/* ------------------------------------- */
 
 .manifesto {
     background-color: #f43d4d;
     padding: 5em;
     color: white;
+    margin-top: 100px;
 }
 
-*{
-    font-family: sans-serif;
+.manifesto h3 {
+    color: white;
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0 100px;
+}
+
+.manifesto p {
+    font-family: abril-text, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    margin: 0 100px;
+}
+
+/* ------------------------------------- */
+/* -----------------Team---------------- */
+/* ------------------------------------- */
+
+.flex-team {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    text-align: left;
+    border: 3px solid rebeccapurple;
+}
+
+.flex-item {
+    width: 300px;
+    padding: 15px;
+}
+
+.flex-item p {
+    font-family: abril-titling, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #414042;
+    margin: 0 0 50px 0;
+}
+
+.flex-item h3 {
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #f43d4d;
+    margin: 
+    }
+
+/* ------------------------------------- */
+/* ---------------Contact--------------- */
+/* ------------------------------------- */
+
+.contact {
+    padding: 100px;
+}
+
+.contact h3 {
+    font-family: chevin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff200;
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    border: 3px solid blueviolet;
+    }
+
+.contact p {
+    font-family: abril-titling, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: white; 
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    border: 3px solid red;
+}
+
+.footer {
+    background-color: #414042;
+    display: flex;
 }
