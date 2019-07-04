@@ -70,6 +70,9 @@
     align-items: center;
     background-color: #fff200;
     height: 80vh;
+    position: relative;
+    top: 50px;
+    z-index:-1;
 }
 
 .main-banner h1 {
@@ -274,15 +277,30 @@
     font-style: normal;
     font-size: 14px;
     color: #f43d4d;
-    margin: 
     }
+
+.flex-item img {
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.flex-item:hover img {
+    opacity: .5;
+}
 
 /* ------------------------------------- */
 /* ---------------Contact--------------- */
 /* ------------------------------------- */
 
 .contact {
-    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* border: 3px solid blue; */
+    width: 50vw;
 }
 
 .contact h3 {
@@ -307,6 +325,54 @@
     padding: 0;
     margin: 0;
     /* border: 3px solid red; */
+    margin-bottom: 20px;
+}
+
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: solid greenyellow; */
+}
+
+.social-media-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* border: 3px solid #f43d4d; */
+}
+
+.momentos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* border: 3px solid white; */
+}
+
+.momentos button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: chevin-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.momentos button:hover {
+    border: 1px solid #fff200;
+    color: #fff200;
+}
+
+.map {
+    width: 50vw;
 }
 
 .footer {
