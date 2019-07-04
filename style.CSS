@@ -123,6 +123,10 @@
     padding: 0;
 }
 
+.flex-projects a:hover {
+    opacity: .5;
+}
+
 .flex-projects {
     display: flex;
     justify-content: left;
@@ -298,7 +302,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     /* border: 3px solid blue; */
     width: 50vw;
 }
@@ -333,7 +337,40 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 62%;
     /* border: solid greenyellow; */
+}
+
+.icon-facebook {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url(./Images/iconesredesociais-facebookbranco.png);
+    /* border: 3px solid yellow; */
+}
+
+.icon-facebook:hover {
+    background-image: url(./Images/iconesredesociais-facebookamarelo.png);
+}
+
+.icon-instagram {
+    width: 33px;
+    height: 33px;
+    background-image: url(./Images/iconesredesociais-instagrambranco.png);
+}
+
+.icon-instagram:hover {
+    background-image: url(./Images/iconesredesociais-instagramamarelo.png);
+}
+
+.icon-behance {
+    width: 33px;
+    height: 33px;
+    background-image: url(./Images/iconesredesociais-behancebranco.png);
+}
+
+.icon-behance:hover {
+    background-image: url(./Images/iconesredesociais-behanceamarelo.png);
 }
 
 .social-media-btn {
@@ -342,7 +379,6 @@
     justify-content: space-evenly;
     /* border: 3px solid #f43d4d; */
 }
-
 .momentos {
     display: flex;
     justify-content: center;
